@@ -1,0 +1,37 @@
+# large assets (hosted on the HuggingFace Hub, see scripts/download_assets.py)
+assets/*
+!assets/README.md
+
+# generated outputs / caches
+output/
+cache/
+examples/demo_output/
+**/output/
+**/cache/
+**/result/
+**/vis_result/
+**/go_*_out*/
+**/imputation_outputs/
+**/czi_query/data/
+pretraining/results/
+pretraining/logs/
+pretraining/triplet_index_ontology_curriculum_top50/
+wandb/
+*.log
+nohup.out
+
+# data
+*.h5ad
+!examples/data/demo_pancreas.h5ad
+*.npy
+*.arrow
+/data/
+*.gmt
+
+# python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+

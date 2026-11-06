@@ -1,0 +1,28 @@
+# Core: preprocessing, tokenization, inference (tested with Python 3.12)
+torch==2.9.1
+transformers==4.57.1
+safetensors==0.6.2
+datasets==4.3.0
+pyarrow==21.0.0
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.3.3
+anndata==0.12.3
+scanpy==1.11.5
+scikit-learn==1.7.2
+umap-learn==0.5.9.post2
+networkx==3.5
+obonet==1.1.1
+matplotlib==3.10.7
+seaborn==0.13.2
+tqdm==4.67.1
+huggingface-hub==0.35.3
+
+# Pretraining (GPU; torchsort builds a CUDA extension against the installed torch)
+deepspeed==0.18.1
+torchsort==0.1.10
+wandb==0.22.3
+
+# Downstream analyses (optional)
+# rapids-singlecell==0.13.4  cupy-cuda12x==13.6.0   # GPU scIB metrics (1_clustering_integration)
+# decoupler==2.1.2                                   # GO gene sets (3_gene_function)
